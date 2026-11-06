@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#08070c">
+  <meta name="color-scheme" content="dark">
+  <meta name="description" content="Doná a la fundación en segundos con Mercado Pago o transferencia.">
+  <title>Doná ahora · Fundación</title>
+
+  <!-- Open Graph: vista previa al compartir por WhatsApp / redes -->
+  <meta property="og:title" content="Doná ahora · Fundación">
+  <meta property="og:description" content="Tu aporte llega al instante. Doná con Mercado Pago o por alias.">
+  <meta property="og:type" content="website">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%92%9B%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="wrap">
+
+    <header class="hero">
+      <span class="badge"><span class="badge__dot" aria-hidden="true"></span>En vivo</span>
+      <h1 class="title">Tu aporte<br><span class="title__accent">cambia vidas</span></h1>
+      <p class="lead">Doná en segundos. Cada peso suma esta noche.</p>
+    </header>
+
+    <!-- CTA principal: insertá tu link de Mercado Pago en el href -->
+    <a href="https://link.mercadopago.com.ar/intiliam" class="cta" id="ctaMp" target="_blank" rel="noopener">
+      <svg class="cta__icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 3 4.5 6.7 4.5c2.1 0 3.6 1.2 5.3 3.1 1.7-1.9 3.2-3.1 5.3-3.1 3.7 0 5.8 3.9 4.3 7.3C19.5 16.4 12 21 12 21z"/></svg>
+      <span class="cta__text">Donar con Mercado Pago</span>
+      <span class="cta__shine" aria-hidden="true"></span>
+    </a>
+    <p class="secure">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3z"/></svg>
+      Pago 100% seguro procesado por Mercado Pago
+    </p>
+
+    <!-- Alternativa: alias bancario -->
+    <section class="alias" aria-labelledby="aliasTitle">
+      <h2 class="alias__title" id="aliasTitle">O transferí al alias</h2>
+      <div class="alias__box">
+        <code class="alias__value" id="aliasValue">casa.estufa.mp</code>
+        <button type="button" class="copy" id="btnCopy" aria-describedby="aliasValue">
+          <span class="copy__label">Copiar</span>
+        </button>
+      </div>
+      <p class="sr-only" id="copyStatus" role="status" aria-live="polite"></p>
+    </section>
+
+    <footer class="foot">Gracias por ser parte 💛</footer>
+  </main>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
